@@ -10,29 +10,28 @@ public class Classe {
 	
   public void saisircllas(Classe C) {
 	  Scanner scan=new Scanner(System.in);
-	  System.out.printf("Numero de clsse= ");
+	  System.out.printf("->Numero de clsse = ");
 	  C.Numeroclasse=scan.nextInt();
-	  System.out.printf("Nom de classe:");
+	  System.out.printf("->Nom de classe = ");
 	  C.Nomclasse=scan.next();
-	 System.out.printf("Effectif= ");
+	 System.out.printf("->Effectif = ");
 	  C.Effectif=scan.nextInt();
 }
   
   public void Afficheclasse(Classe C) {
-	  System.out.println();
-	  System.out.println("Numero de clsse= "+C.Numeroclasse);
-	  System.out.println("Nom de classe:"+C.Nomclasse);
-	  System.out.println("Effectif= "+C.Effectif);
-	  System.out.println("*****************");
+	  System.out.println("-Numero de clsse = "+C.Numeroclasse);
+	  System.out.println("-Nom de classe = "+C.Nomclasse);
+	  System.out.println("-Effectif = "+C.Effectif);
+	  System.out.println("**************************");
   }
   
   public void ModifierClass(Classe C) {
 	  Scanner scan=new Scanner(System.in);
-	  System.out.printf("Nou_Numero= ");
+	  System.out.printf("Nou_Numero = ");
 	  C.Numeroclasse=scan.nextInt();
-	  System.out.printf("Nou_Nom de classe:");
+	  System.out.printf("Nou_Nom de classe = ");
 	  C.Nomclasse=scan.next();
-	  System.out.printf("Nou_Effectif= ");
+	  System.out.printf("Nou_Effectif = ");
 	  C.Effectif=scan.nextInt();
   }
 

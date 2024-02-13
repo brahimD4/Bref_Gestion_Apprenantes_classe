@@ -15,59 +15,58 @@ public class Apprenant {
 	 
 	 Scanner scan=new Scanner(System.in);
 	 
-	 public Apprenant() {
+	 public void Saisir_informatios() {
 		 int jour,mois,anne;
 		     Date_de_naissance=Calendar.getInstance();
 		
 		    //SimpleDateFormat sdf=new SimpleDateFormat("EEEEE dd/MM/yyyy");
 		    
 		    
-			System.out.printf("Nom =");
+			System.out.printf("->Nom =");
 			Nom=scan.next();
-			System.out.printf("Prenom =");
+			System.out.printf("->Prenom =");
 			Prenom=scan.next();
-			System.out.printf("Adresse :");
+			System.out.printf("->Adresse :");
 			Adresse=scan.next();
-			System.out.printf("Tel :");
+			System.out.printf("->Tel :");
 			NumTelephone=scan.nextInt();
-			System.out.println("Date :");
+			System.out.println("_Date :");
 			
-			System.out.printf("jour=");
+			System.out.printf("->Jour=");
 			jour=scan.nextInt();
-			System.out.printf("mois=");
+			System.out.printf("->Mois=");
 			mois=scan.nextInt();
-			System.out.printf("anne=");
+			System.out.printf("->Anne=");
 			anne=scan.nextInt();
 			Date_de_naissance.set(anne, mois-1, jour);
 			
 	}
 public void AfficheApprenants() {
 	SimpleDateFormat sdf=new SimpleDateFormat("EEEEE dd/MM/yyyy");
-	System.out.println();
-	System.out.println("NOM=:"+Nom);
-	System.out.println("Prenom :"+Prenom);
-	System.out.println("Adresse :"+Adresse);
-	System.out.println("Tel :"+NumTelephone);
-	System.out.println("date :"+sdf.format(Date_de_naissance.getTime()));
+	System.out.println("-NOM = "+Nom);
+	System.out.println("-Prenom = "+Prenom);
+	System.out.println("-Adresse = "+Adresse);
+	System.out.println("-Tel = "+NumTelephone);
+	System.out.println("-Date = "+sdf.format(Date_de_naissance.getTime()));
 	System.out.println("****************************");
 }
 public void ModifieApprenants(Apprenant A) {
 	int jour,mois,anne;
-	System.out.printf("Nou_Nom =");
+	System.out.printf("->Nou_Nom = ");
 	A.Nom=scan.next();
-	System.out.printf("Nou_Prenom =");
+	System.out.printf("->Nou_Prenom = ");
 	A.Prenom=scan.next();
-	System.out.printf("Nou_Adresse :");
+	System.out.printf("->Nou_Adresse = ");
 	A.Adresse=scan.next();
-	System.out.printf("Nou_Tel :");
+	System.out.printf("->Nou_Tel = ");
 	A.NumTelephone=scan.nextInt();
-	System.out.println("Date :");
+	System.out.println("->Nou_Date :");
 	
-	System.out.printf("jour=");
+	System.out.printf("->Jour = ");
 	jour=scan.nextInt();
-	System.out.printf("mois=");
+	System.out.printf("->Mois = ");
 	mois=scan.nextInt();
-	System.out.printf("anne=");
+	System.out.printf("->Anne = ");
 	anne=scan.nextInt();
 	A.Date_de_naissance.set(anne, mois-1, jour);
 	
